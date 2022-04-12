@@ -12,7 +12,7 @@ for i, chunk in enumerate(pd.read_csv(source_path, chunksize=chunksize,
                                              'PPD Category Type', 'Record Status-monthly file only']
                                       )):
  df = pd.DataFrame(data=chunk)
- df['Uniq Adress'] = df['Street'] + ' ' + df['PAON']
+ df['Uniq Adress'] = df['Street'] + ' ' + df['PAON'] + ' ' +df['Locality']
  df2 = df.groupby('Uniq Adress').sum()
  df1 = df.filter(['Uniq Adress', 'Price'], axis=1)
  df2 = df2.filter(['Uniq Adress', 'Price'], axis=1)

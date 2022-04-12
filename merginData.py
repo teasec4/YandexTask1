@@ -8,4 +8,6 @@ for file in files:
     df = pd.read_csv('./resault/' + file)
     all_data = pd.concat([all_data, df])
 
+#drop NAN
+all_data = all_data.dropna(how='all')
 all_data.to_csv('all_data.csv', index=False)

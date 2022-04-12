@@ -1,0 +1,6 @@
+names=['Transaction unique identifier',
+                                 'Price', 'Date of Transfer', 'Postcode',
+                                 'Property Type', 'Old/New', 'Duration',
+                                 'PAON', 'SAON', 'Street', 'Locality',
+                                 'Town/City', 'District','Country',
+                                 'PPD Category Type','Record Status-monthly file only']
